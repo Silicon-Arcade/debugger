@@ -1,0 +1,26 @@
+chip6502_debugger — a step-through debugger for the chip6502 core
+from "6502 Construction Set"
+Copyright 2026 Jason Hogg
+
+This product includes software developed for the book
+"6502 Construction Set" (https://silicon-arcade.com).
+
+The CODE in this repository is licensed under the Apache License,
+Version 2.0 — see LICENSE.
+
+This CODE is not to be used for training, fine-tuning, evaluation,
+benchmarking, or improvement of machine learning or artificial
+intelligence models without prior written permission — see AI_POLICY.md.
+
+The TEXT of "6502 Construction Set" — its chapters, appendices and
+essays — is a separate work, copyright 2026 Jason Hogg, all rights
+reserved. It is not licensed by LICENSE and no permission to copy or
+redistribute it is granted here.
+
+The processor this debugger runs, chip6502_core, is not included in
+this repository. It is the book's reference implementation
+(https://github.com/Silicon-Arcade/reference_implementation),
+which carries its own LICENSE and NOTICE.
+
+Klaus Dormann's 6502 test suites (GPL-3.0) are not included in this
+repository. You download them yourself and load them at run time.

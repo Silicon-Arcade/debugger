@@ -1,0 +1,7 @@
+/target
+**/*.rs.bk
+
+# Private working notes. `*.local.*` is never published - this repo is public
+# and these files describe the workflow behind it.
+*.local.md
+*.local.*

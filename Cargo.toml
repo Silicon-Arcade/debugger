@@ -1,0 +1,24 @@
+[package]
+name = "chip6502_debugger"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+license = "Apache-2.0"
+description = "A step-through debugger for the chip6502 core from 6502 Construction Set"
+repository = "https://github.com/Silicon-Arcade/debugger"
+publish = false
+
+[dependencies]
+# The processor: the reference implementation's chip6502_core, cloned next
+# to this repository. To debug your own core instead, point this path at
+# your workspace's chip6502_core.
+chip6502_core = { path = "../reference_implementation/chip6502_core" }
+eframe = "0.28"
+egui = "0.28"
+rfd = "0.14"
+
+# Dependencies build with light optimization so the window stays responsive
+# in a debug build; this crate stays at opt-level 0 for quick rebuilds.
+[profile.dev.package."*"]
+opt-level = 1
+debug     = 1
